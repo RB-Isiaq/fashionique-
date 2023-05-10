@@ -1,0 +1,127 @@
+.products {
+  padding: 30px 50px;
+  display: flex;
+  animation: products 1.5s ease-in-out forwards;
+  margin-top: 83px;
+  .left {
+    flex: 1;
+    position: sticky;
+    height: 100%;
+    top: 60px;
+
+    .filterItem {
+      margin-bottom: 30px;
+
+      h2 {
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .inputItem {
+        margin-bottom: 10px;
+        label {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 3;
+
+    .catImg {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 50px;
+      transition: all 1s ease-in;
+    }
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .products {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    .left {
+      width: 100%;
+      position: static;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 5px;
+      flex-wrap: wrap;
+
+      .filterItem {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 190px;
+
+        h2 {
+          font-weight: 400;
+          margin-bottom: 16px;
+        }
+
+        .inputItem {
+          margin-bottom: 10px;
+          label {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 100%;
+
+      .catImg {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .products {
+    padding: 30px 10px;
+
+    .left {
+      .filterItem {
+        margin-bottom: 10px;
+
+        h2 {
+          margin-bottom: 14px;
+        }
+
+        .inputItem {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .right {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes products {
+  from {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

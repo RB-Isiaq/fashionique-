@@ -1,0 +1,94 @@
+.contact {
+  background-color: #2879fe;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      color: white;
+      background-color: #333;
+      cursor: pointer;
+    }
+
+    .icons {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact {
+    padding: 15px 10px;
+
+    .wrapper {
+      input {
+        padding: 7px;
+      }
+
+      button {
+        padding: 7px;
+      }
+
+      .icons {
+        gap: 7px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .contact {
+    padding: 15px 10px;
+
+    .wrapper {
+      display: block;
+      span {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .mail {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        input {
+          padding: 7px;
+        }
+
+        button {
+          padding: 7px;
+        }
+      }
+
+      .icons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+    }
+  }
+}
