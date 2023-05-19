@@ -19,7 +19,7 @@ const Slider = () => {
       if (currentSlide > 2) {
         setCurrentSlide(0);
       }
-    }, 3000);
+    }, 4000);
 
     return () => {
       clearInterval(timeInterval);
