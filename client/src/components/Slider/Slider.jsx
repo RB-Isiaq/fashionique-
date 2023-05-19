@@ -17,7 +17,7 @@ const Slider = () => {
     const timeInterval = setInterval(() => {
       if (currentSlide > 2 || currentSlide < 0) return;
       else nextSlide();
-    }, 2700);
+    }, 3000);
 
     return () => {
       clearInterval(timeInterval);
