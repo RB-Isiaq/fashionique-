@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 import "./Slider.scss";
@@ -12,6 +12,16 @@ const Slider = () => {
   const nextSlide = () => {
     setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev + 1);
   };
+
+  useEffect(() => {
+    const timeInterval = setInterval(() => {
+      nextSlide();
+    }, 2500);
+
+    return () => {
+      clearInterval(timeInterval);
+    };
+  }, []);
 
   return (
     <div className="slider">

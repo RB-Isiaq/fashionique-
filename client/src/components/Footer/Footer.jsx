@@ -50,19 +50,16 @@ const Footer = () => {
         <div className="item item2">
           <h1>About</h1>
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            esse ullam provident, quo necessitatibus eos quae voluptatem atque
-            tempora quisquam doloremque, harum perspiciatis id libero, maxime
-            saepe aspernatur cum deserunt.
+            Fashionique: Your ultimate destination for trendy fashion. Discover
+            the latest styles, shop with ease, and express your unique fashion
+            sense.
           </span>
         </div>
         <div className="item item2">
           <h1>Contact</h1>
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            esse ullam provident, quo necessitatibus eos quae voluptatem atque
-            tempora quisquam doloremque, harum perspiciatis id libero, maxime
-            saepe aspernatur cum deserunt.
+            Contact us at Fashionique for any inquiries or assistance. Reach out
+            via email or phone and our team will be happy to help you.
           </span>
         </div>
       </div>

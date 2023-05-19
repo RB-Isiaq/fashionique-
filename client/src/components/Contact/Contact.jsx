@@ -1,9 +1,10 @@
 import "./Contact.scss";
+import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import GoogleIcon from "@mui/icons-material/Google";
-import PinterestIcon from "@mui/icons-material/Pinterest";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Contact = () => {
   return (
@@ -11,15 +12,31 @@ const Contact = () => {
       <div className="wrapper">
         <span>BE IN TOUCH WITH US</span>
         <div className="mail">
-          <input type="text" placeholder="Enter you e-mail..." />
-          <button>JOIN US</button>
+          <input type="text" placeholder="Enter you e-mail..." required />
+          <button
+            onClick={() =>
+              window.open("mailto:isiaqridwanbukola1999@gmail.com")
+            }
+          >
+            JOIN US
+          </button>
         </div>
         <div className="icons">
-          <FacebookIcon />
-          <InstagramIcon />
-          <TwitterIcon />
-          <GoogleIcon />
-          <PinterestIcon />
+          <Link className="link" to="twitter.com/rb_isiaq">
+            <TwitterIcon />
+          </Link>
+          <Link className="link" to="linkedin.com/in/rb-isiaq">
+            <LinkedInIcon />
+          </Link>
+          <Link className="link" to="github.com/rb-isiaq">
+            <GitHubIcon />
+          </Link>
+          <Link className="link" to="facebook.com/ridwan2535">
+            <FacebookIcon />
+          </Link>
+          <Link className="link" to="instagram.com/r.b.isiaq">
+            <InstagramIcon />
+          </Link>
         </div>
       </div>
     </div>
