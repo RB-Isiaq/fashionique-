@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { makeRequest } from "../../makeRequest";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Cart.scss";
 import DeleteOutinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 import CartContext from "../../context/store";
@@ -8,6 +8,7 @@ import CartContext from "../../context/store";
 
 const Cart = () => {
   const { products, removeItem, resetCart } = useContext(CartContext);
+  const navigate = useNavigate();
   const removeItemHandler = (id) => {
     removeItem(id);
   };
@@ -19,6 +20,7 @@ const Cart = () => {
   //   "pk_test_51N5pdnE7KUTvtGBXLRp8m6bnYHJDJqb4brg1oylwSrGAJRAUNeyyWr57QL3itwMEAc8mXgbYCE3SXXtvX21dVIox00uCbsHei3"
   // );
   const handlePayment = async () => {
+    navigate("/success");
     // try {
     //   const stripe = await stripePromise;
     //   const res = await makeRequest.post("/orders", {
@@ -66,9 +68,9 @@ const Cart = () => {
             <span>TOTAL</span>
             <span>${total.toFixed(2)}</span>
           </div>
-          <Link to="/success" className="link">
-            <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
-          </Link>
+
+          <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
+
           <span className="reset" onClick={resetCartHandler}>
             Clear Cart
           </span>

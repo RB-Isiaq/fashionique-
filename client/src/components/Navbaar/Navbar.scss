@@ -158,6 +158,11 @@
 @media only screen and (max-width: 390px) {
   .navbar {
     .wrapper {
+      .center {
+        &:hover {
+          transform: scale(1);
+        }
+      }
       .right {
         .icons {
           .hideIcon {

@@ -13,11 +13,9 @@ const FeaturedProducts = ({ type }) => {
       <div className="top">
         <h1>{type} products</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
-          tempore illo asperiores aliquid consectetur cumque, quaerat,
-          voluptatibus optio voluptas magni recusandae amet deserunt ex, eos
-          explicabo cum saepe reprehenderit nostrum doloremque dolor fugiat vel
-          debitis. Magni quo nam molestias porro.
+          {type === "featured"
+            ? "Discover our curated collection of fashion-forward pieces that epitomize style and quality. From elegant dresses to statement accessories, our featured products are designed to make you look and feel fabulous, ensuring you stay ahead of the fashion game."
+            : "Stay on-trend with our selection of the hottest fashion items right now. From must-have seasonal essentials to the latest runway-inspired designs, our trending products embody the latest styles and fashion movements, allowing you to express your unique sense of style effortlessly"}
         </p>
       </div>
       <div className="bottom">
