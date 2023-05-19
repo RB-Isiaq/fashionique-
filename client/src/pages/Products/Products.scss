@@ -95,12 +95,13 @@
     padding: 30px 10px;
 
     .left {
+      justify-content: flex-start;
       .filterItem {
         margin-bottom: 10px;
 
         h2 {
           margin-bottom: 14px;
-          font-size: 19px;
+          font-size: 20px;
         }
 
         .inputItem {
