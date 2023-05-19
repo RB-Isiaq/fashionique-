@@ -72,11 +72,11 @@ const Cart = () => {
           <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
 
           <span className="reset" onClick={resetCartHandler}>
-            Clear Cart
+            Clear cart
           </span>
         </>
       ) : (
-        <p style={{ textAlign: "center", color: "red" }}>Your Cart is empty!</p>
+        <p style={{ textAlign: "center", color: "red" }}>Your cart is empty!</p>
       )}
     </div>
   );

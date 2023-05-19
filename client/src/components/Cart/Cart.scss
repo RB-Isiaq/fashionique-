@@ -67,7 +67,7 @@
   }
   button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #2879fe;
     color: white;
     cursor: pointer;
@@ -78,7 +78,7 @@
 
   .reset {
     color: red;
-    font-size: 12px;
+    font-size: 13px;
     cursor: pointer;
   }
 }
@@ -86,7 +86,7 @@
 @media only screen and (max-width: 420px) {
   .cart {
     width: 90%;
-    right: 2px;
+    right: 0;
 
     .item {
       display: flex;
