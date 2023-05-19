@@ -15,8 +15,9 @@ const Slider = () => {
 
   useEffect(() => {
     const timeInterval = setInterval(() => {
+      if (currentSlide > 2 || currentSlide < 0) return;
       nextSlide();
-    }, 2500);
+    }, 2700);
 
     return () => {
       clearInterval(timeInterval);
