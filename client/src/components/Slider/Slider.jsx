@@ -15,14 +15,16 @@ const Slider = () => {
 
   useEffect(() => {
     const timeInterval = setInterval(() => {
-      if (currentSlide > 2 || currentSlide < 0) return;
-      else nextSlide();
+      nextSlide();
+      if (currentSlide > 2) {
+        setCurrentSlide(0);
+      }
     }, 3000);
 
     return () => {
       clearInterval(timeInterval);
     };
-  }, []);
+  }, [currentSlide]);
 
   return (
     <div className="slider">
