@@ -20,7 +20,7 @@ const Cart = () => {
     "pk_test_51N5pdnE7KUTvtGBXLRp8m6bnYHJDJqb4brg1oylwSrGAJRAUNeyyWr57QL3itwMEAc8mXgbYCE3SXXtvX21dVIox00uCbsHei3"
   );
   const handlePayment = async () => {
-    // navigate("/success");
+    navigate("/success");
     try {
       const stripe = await stripePromise;
       const res = await makeRequest.post("/orders", {
@@ -46,11 +46,7 @@ const Cart = () => {
             <img src={item.img} alt="" />
             <div className="details">
               <h1>{item.title}</h1>
-              <p>
-                {item.desc.length > 15
-                  ? item.desc.substring(0, 15) + "..."
-                  : item.desc}
-              </p>
+              <p>{item.desc}</p>
               <div className="price">
                 {item.quantity} x ${item.price}
               </div>

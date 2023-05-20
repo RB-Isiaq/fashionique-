@@ -41,7 +41,7 @@ const Success = () => {
           );
         })}
         <h3>Thanks for your patronage.</h3>
-        <h3 style={{ fontSize: 10 }}>Redirecting ...</h3>
+        <h3 style={{ fontSize: 11 }}>Redirecting ...</h3>
       </div>
     </div>
   );

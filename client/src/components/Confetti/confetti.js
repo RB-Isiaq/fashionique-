@@ -45,7 +45,7 @@ export default function Fireworks() {
 
   const startAnimation = useCallback(() => {
     if (!intervalId) {
-      setIntervalId(setInterval(nextTickAnimation, 400));
+      setIntervalId(setInterval(nextTickAnimation, 1000));
     }
   }, [intervalId, nextTickAnimation]);
   startAnimation();

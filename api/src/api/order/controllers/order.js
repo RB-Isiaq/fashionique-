@@ -32,8 +32,8 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
     try {
       const session = await stripe.checkout.sessions.create({
         mode: "payment",
-        success_url: process.env.SUCCESS_URL + "?success=true",
-        cancel_url: process.env.CLIENT_URL + "?success=false",
+        success_url: process.env.SUCCESS_URL,
+        cancel_url: process.env.CLIENT_URL,
         line_items: lineItems,
         shipping_address_collection: { allowed_countries: ["US", "CA"] },
         payment_method_types: ["card"],
