@@ -1,7 +1,7 @@
 .categories-title {
   text-align: center;
-  font-size: 38px;
-  font-weight: 400;
+  font-size: 35px;
+  font-weight: 500;
 }
 .categories {
   display: flex;
@@ -64,14 +64,18 @@
 }
 
 @media only screen and (max-width: 620px) {
+  .categories-title {
+    text-align: center;
+    font-size: 28px;
+  }
   .categories {
     flex-direction: column;
     height: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 
     .row {
-      min-height: 140px;
+      min-height: 150px;
 
       button {
         position: absolute;

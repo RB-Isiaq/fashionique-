@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Fireworks from "../../components/Confetti/confetti";
 import "./Success.scss";
 
 import CartContext from "../../context/store";
@@ -26,6 +27,7 @@ const Success = () => {
 
   return (
     <div className="success" style={{ animation: animate }}>
+      <Fireworks />
       <div className="wrapper">
         <h1>Congratulations</h1>
         <h2>You've completed an order of </h2>
@@ -38,7 +40,8 @@ const Success = () => {
             </p>
           );
         })}
-        <h3>To be delivered in coming days!</h3>
+        <h3>Thanks for your patronage.</h3>
+        <h3 style={{ fontSize: 10 }}>Redirecting ...</h3>
       </div>
     </div>
   );

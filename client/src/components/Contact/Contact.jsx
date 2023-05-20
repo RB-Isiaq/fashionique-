@@ -22,19 +22,19 @@ const Contact = () => {
           </button>
         </div>
         <div className="icons">
-          <Link className="link" to="twitter.com/rb_isiaq">
+          <Link className="link" to="https://twitter.com/rb_isiaq">
             <TwitterIcon />
           </Link>
-          <Link className="link" to="linkedin.com/in/rb-isiaq">
+          <Link className="link" to="https://linkedin.com/in/rb-isiaq">
             <LinkedInIcon />
           </Link>
-          <Link className="link" to="github.com/rb-isiaq">
+          <Link className="link" to="https://github.com/rb-isiaq">
             <GitHubIcon />
           </Link>
-          <Link className="link" to="facebook.com/ridwan2535">
+          <Link className="link" to="https://facebook.com/ridwan2535">
             <FacebookIcon />
           </Link>
-          <Link className="link" to="instagram.com/r.b.isiaq">
+          <Link className="link" to="https://instagram.com/r.b.isiaq">
             <InstagramIcon />
           </Link>
         </div>

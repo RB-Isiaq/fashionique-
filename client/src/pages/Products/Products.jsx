@@ -26,7 +26,7 @@ function Products() {
     <div className="products">
       <div className="left">
         <div className="filterItem">
-          <h2>Product Categories</h2>
+          <h2>Product categories</h2>
           {error
             ? "Something went wrong!"
             : loading
