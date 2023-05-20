@@ -20,7 +20,7 @@ const Cart = () => {
     "pk_test_51N5pdnE7KUTvtGBXLRp8m6bnYHJDJqb4brg1oylwSrGAJRAUNeyyWr57QL3itwMEAc8mXgbYCE3SXXtvX21dVIox00uCbsHei3"
   );
   const handlePayment = async () => {
-    navigate("/success");
+    // navigate("/success");
     try {
       const stripe = await stripePromise;
       const res = await makeRequest.post("/orders", {
