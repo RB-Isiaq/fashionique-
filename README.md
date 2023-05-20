@@ -1,6 +1,12 @@
 # Project Live Link
 
-[My Contacts](https://my-contacts-crud.vercel.app/).
+[My Contacts](https://fashionique.vercel.app).
+
+# Content Management and Backend
+
+Strapi was used for this project
+
+cd into the api directory
 
 # Getting Started with Create React App
 
@@ -8,7 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the client directory, you can run:
 
 ### `npm start`
 
