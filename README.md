@@ -1,6 +1,6 @@
 # Project Live Link
 
-[My Contacts](https://fashionique.vercel.app).
+[Fashionique](https://fashionique.vercel.app)
 
 # Content Management and Backend
 
