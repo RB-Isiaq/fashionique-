@@ -1,6 +1,5 @@
 import "./Contact.scss";
 import { Link } from "react-router-dom";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -30,9 +29,6 @@ const Contact = () => {
           </Link>
           <Link className="link" to="https://github.com/rb-isiaq">
             <GitHubIcon />
-          </Link>
-          <Link className="link" to="https://facebook.com/ridwan2535">
-            <FacebookIcon />
           </Link>
           <Link className="link" to="https://instagram.com/r.b.isiaq">
             <InstagramIcon />

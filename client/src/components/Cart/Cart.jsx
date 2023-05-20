@@ -20,18 +20,18 @@ const Cart = () => {
     "pk_test_51N5pdnE7KUTvtGBXLRp8m6bnYHJDJqb4brg1oylwSrGAJRAUNeyyWr57QL3itwMEAc8mXgbYCE3SXXtvX21dVIox00uCbsHei3"
   );
   const handlePayment = async () => {
-    // navigate("/success");
-    try {
-      const stripe = await stripePromise;
-      const res = await makeRequest.post("/orders", {
-        products,
-      });
-      await stripe.redirectToCheckout({
-        sessionId: res.data.stripeSession.id,
-      });
-    } catch (error) {
-      console.log(error);
-    }
+    navigate("/success");
+    // try {
+    //   const stripe = await stripePromise;
+    //   const res = await makeRequest.post("/orders", {
+    //     products,
+    //   });
+    //   await stripe.redirectToCheckout({
+    //     sessionId: res.data.stripeSession.id,
+    //   });
+    // } catch (error) {
+    //   console.log(error);
+    // }
   };
 
   const total = products.reduce((acc, curr) => {
