@@ -33,7 +33,7 @@ const Categories = () => {
             <div className="col">
               <div className="row">
                 <img src="/img/bag.jpg" alt="" />
-                <Link className="link" to="/products/5">
+                <Link className="link" to="/products/4">
                   <button>Bags</button>
                 </Link>
               </div>
@@ -41,7 +41,7 @@ const Categories = () => {
             <div className="col">
               <div className="row">
                 <img src="/img/img.jpg" alt="" />
-                <Link className="link" to="/products/4">
+                <Link className="link" to="/products/5">
                   <button>Shoes</button>
                 </Link>
               </div>

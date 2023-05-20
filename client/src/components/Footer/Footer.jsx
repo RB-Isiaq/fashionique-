@@ -17,10 +17,10 @@ const Footer = () => {
             Children
           </Link>
           <Link className="link" to="/products/4">
-            Shoes
+            Bags
           </Link>
           <Link className="link" to="/products/5">
-            Bags
+            Shoes
           </Link>
           <Link className="link" to="/products/6">
             Sunglasess
