@@ -17,6 +17,8 @@ const Product = () => {
 
   const [data, loading, error] = useFetch(`/products/${id}?populate=*`);
 
+  console.log(data);
+
   const { title, price, desc, img, img2, mainImg, productId } = {
     title: data?.attributes?.title,
     productId: data?.id,
