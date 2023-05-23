@@ -36,7 +36,7 @@ const Success = () => {
             <p key={item.id}>
               <span>{item.quantity}</span>
               {item.quantity > 1 ? " quantites " : " quantity "} of
-              <span> {item.title}.</span>
+              <span> {item.title}</span>
             </p>
           );
         })}

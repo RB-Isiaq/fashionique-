@@ -12,7 +12,6 @@ function Products() {
   const [data, loading, error] = useFetch(
     `/sub-categories?[filters[categories][id][$eq]=${catId}`
   );
-  console.log(data);
 
   const handleChange = (e) => {
     const value = e.target.value;
@@ -71,11 +70,6 @@ function Products() {
         </div>
       </div>
       <div className="right">
-        {/* <img
-          className="catImg"
-          src={process.env.REACT_APP_UPLOAD_URL + data.attributes?.img}
-          alt=""
-        /> */}
         <img className="catImg" src="/img/img2.jpg" alt="" />
         <List catId={catId} sort={sort} subCats={selectedSubCats} />
       </div>
