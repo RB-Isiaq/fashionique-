@@ -10,13 +10,15 @@ const List = ({ catId, sort, subCats }) => {
   );
   return (
     <div className="list">
-      {error
-        ? "Something went wrong!"
-        : loading
-        ? "Loading..."
-        : data?.map((item) => {
-            return <Card item={item} key={item.id} />;
-          })}
+      {error ? (
+        "Something went wrong!"
+      ) : loading ? (
+        <img src="/img/loader.svg" alt="loading" />
+      ) : (
+        data?.map((item) => {
+          return <Card item={item} key={item.id} />;
+        })
+      )}
     </div>
   );
 };

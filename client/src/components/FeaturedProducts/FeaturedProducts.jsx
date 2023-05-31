@@ -22,7 +22,7 @@ const FeaturedProducts = ({ type }) => {
         {error
           ? "Something went wrong!"
           : loading
-          ? "loading..."
+          ? <img src="/img/loader.svg" alt="loading" />
           : data?.map((item) => {
               return <Card item={item} key={item.id} />;
             })}

@@ -12,11 +12,11 @@ const Success = () => {
   useEffect(() => {
     const timer2 = setTimeout(() => {
       setAnimate("success3 1s ease-out backwards");
-    }, 8500);
+    }, 9500);
     const timer = setTimeout(() => {
       navigate("/");
       resetCart();
-    }, 9500);
+    }, 10500);
 
     return () => {
       clearTimeout(timer);

@@ -42,7 +42,7 @@ const Product = () => {
       {error ? (
         "Something went wrong"
       ) : loading ? (
-        "Loading..."
+        <img src="/img/loader.svg" alt="loading" />
       ) : (
         <>
           <div className="left">
